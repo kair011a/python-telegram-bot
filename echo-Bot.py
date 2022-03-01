@@ -21,7 +21,7 @@ def help(update: Update, context: CallbackContext):
 	update.message.reply_text("Content is empty...")
 
 def echo(update: Update, context: CallbackContext):
-	update.message.reply_text("Bekjan chmo")
+	update.message.reply_text(update.message.text)
 
 def main():
 	dispatcher.add_handler(CommandHandler('start', start))
